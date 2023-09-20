@@ -15,7 +15,7 @@ class lista_tareas:
     elif index is not None and index < len(self.tareas):
       del self.tareas[index]
     else:
-      print("Indice fuera de rango")
+      print("Indice fuera de rango o la tarea no se encuentra")
   
   def ver_lista(self):
     return self.tareas
@@ -25,5 +25,5 @@ mi_lista.agregar_tarea("Hacer la compra")
 mi_lista.agregar_tarea("Estudiar para el examen")
 mi_lista.agregar_tarea("Comprar tomates")
 mi_lista.agregar_tarea("Comprar ajos")
-mi_lista.eliminar_tarea(tarea="Comprar ajos")
+mi_lista.eliminar_tarea(tarea = "Comprar ajos")
 print(mi_lista.ver_lista())

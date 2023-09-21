@@ -1,7 +1,7 @@
 # Ejercicio 1 - ListaTareas
 # Crea un programa en Python que almacene una lista de tareas pendientes y permita al usuario agregar nuevas tareas, eliminar tareas existentes y ver la lista de tareas pendientes.
 # Se quiere almacenar strings dentro de un array
-# El enunciado no sugiere que siempre tiene que haber un número de tareas así que la estructura de datos podría ser un array dinamico
+# El enunciado no sugiere que siempre tenga que haber un número fijo de tareas así que la estructura de datos podría ser un array dinamico
 #Especio por usuario: 2KB
 # Programa:
 class lista_tareas:

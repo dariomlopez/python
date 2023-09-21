@@ -2,7 +2,7 @@
 # Diseña un programa en Python que administre una lista de reproducción de canciones. 
 # Debería permitir al usuario agregar nuevas canciones, eliminar canciones existentes y reproducir la lista en orden.
 # Se quiere almacenar strings dentro de un array
-# El enunciado no sugiere que siempre tiene que haber un número de tareas así que la estructura de datos podría ser un array dinamico
+# El enunciado no sugiere que siempre tenga que haber un número fijo de canciones así que la estructura de datos podría ser un array dinamico
 #Especio por usuario: 2KB
 # Programa:
 

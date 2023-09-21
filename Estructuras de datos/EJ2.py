@@ -6,7 +6,7 @@
 
 # Se quiere almacenar un promedio de notas. El dato debería ser tipo númerico
 # La estructura más adecuada será un array dinámico
-# Espacio ocupado:
+# Espacio ocupado: 2KB
 # Programa:
 
 class PromedioCalificaciones:

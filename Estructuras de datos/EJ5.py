@@ -18,9 +18,6 @@ class ColaImpresion:
       return self.cola_impresion.pop(0)
     else:
       return "No hay documentos para imprimir"
-    
-  def mostrar_cola_impresion(self):
-    return self.cola_impresion
   
 mi_imprenta = ColaImpresion()
 

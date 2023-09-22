@@ -3,7 +3,7 @@
 # Los usuarios deben poder agregar nuevos contactos, buscar contactos existentes y eliminar contactos.
 # Se quiere almacenar strings y el teléfono podría ser un número entero. En mi caso todo es un string
 # El enunciado sugiere que al menos tengamos nombre, apellido o teléfono. Por tanto creo lo ideal es usar un objeto de pares de llave: valor
-#Espacio por usuario: 5KB
+# Espacio por usuario: 5KB
 # Programa:
 
 class AgendaContactos:
@@ -21,7 +21,7 @@ class AgendaContactos:
   def buscar_contacto(self, nombre=None, apellido=None, telefono=None):
     
     coincidencia = []
-    # Si nos han indicado el nombre/apellido/telefono y el nombre/apellido/telefono coincide con los existentes se muestra
+    # Si nos han indicado el nombre/apellido/telefono y el nombre/apellido/telefono coincide con los existentes en la lista actual se muestran en pantalla
     for contacto in self.lista_contactos:
       if (nombre is not None and contacto["nombre"] == nombre) or \
          (apellido is not None and contacto["apellido"] == apellido) or \

@@ -12,12 +12,11 @@ class ColaAtencionClientes:
     # para guardar nuestros documentos
     self.cola_clientes = []
 
-  def agregar_documento(self, documento):
+  def agregar_solicitud(self, solicitud):
     # el documento es agregado en la posición cero del array
-    self.cola_clientes.insert(0, documento)
+    self.cola_clientes.insert(0, solicitud)
   
-  def imprimir_documento(self):
-    # Sí la cola de impresión contiene algo se imprime el "documento eliminado" en primera posicion
+  def atender_solicitud(self):
     if self.cola_clientes:
       return self.cola_clientes.pop(0)
     else:

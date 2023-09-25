@@ -38,11 +38,13 @@ class GestorTareasProyecto:
     return self.tareas
     
 gestor = GestorTareasProyecto()
+# Agregando tareas
 gestor.agregar_tarea("Hacer la presentación")
 gestor.agregar_tarea("Revisar informe")
 gestor.agregar_tarea("Hacer pythons")
 gestor.agregar_tarea("Revisar la revisión")
-# gestor.marcar_completada()
-
+# Marco una como completada
+gestor.marcar_completada(2)
+# Tanto ver_progreso como ver_lista me devuelven el estado actual
 print(gestor.ver_progreso())
-print(gestor.ver_lista_tareas())
+# print(gestor.ver_lista_tareas())

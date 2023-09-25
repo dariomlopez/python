@@ -7,5 +7,12 @@ class InventarioProductos:
     self.inventario = []
 
   def agregar_producto(self, nombre, cantidad):
-    self.inventario.append((nombre, cantidad))
+    self.inventario.append({"nombre": nombre,
+                            "cantidad": cantidad})
     
+  def actualizar_cantidad(self, nombre, nueva_cantidad):
+    for producto in self.inventario:
+      if producto["nombre"] == nombre:
+        producto["cantidad"] = nueva_cantidad
+        return True
+    return False

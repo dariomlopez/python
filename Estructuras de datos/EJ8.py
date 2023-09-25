@@ -2,7 +2,7 @@
 # Escribe un programa en Python que implemente una calculadora simple. 
 # Los usuarios pueden realizar operaciones de suma, resta, multiplicación y división. Debes considerar cómo gestionar los resultados anteriores.
 # Se van a usar tipos númericos
-# El enunciado no sugiere que siempre tenga que haber un número fijo de tareas así que la estructura de datos podría ser un array dinamico
+# Estructura de datos: ?
 #Espacio por usuario: 2KB
 # Programa:
 class Calculadora:

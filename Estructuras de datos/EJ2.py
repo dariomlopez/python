@@ -18,7 +18,10 @@ class PromedioCalificaciones:
   def agregar_calificacion(self, calificacion):
     # Añadimos un método a la clase con un sencillo append. 
     # A estás alturas aún no controlamos de qué tipo son los datos 
-    self.calificaciones.append(calificacion)
+    if isinstance(calificacion, (int, float)):
+      self.calificaciones.append(calificacion)
+    else:
+      return "Tipo de dato incorrecto"
 
   def Promedio(self):
     promedioTotal = 0

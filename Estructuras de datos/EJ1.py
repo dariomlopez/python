@@ -13,12 +13,16 @@ class lista_tareas:
   
   def eliminar_tarea(self, index = None, tarea = ""):
     # Se puede eliminar una tarea por indice o por coincidencia total del nombre
-    if tarea in self.tareas:
-      self.tareas.remove(tarea)
-    elif index is not None and index < len(self.tareas) and index >= 0:
-      del self.tareas[index]
+    # Control de tipo de datos
+    if isinstance(tarea, str):
+      if tarea in self.tareas:
+        self.tareas.remove(tarea)
+      elif index is not None and index < len(self.tareas) and index >= 0:
+        del self.tareas[index]
+      else:
+        print("Indice fuera de rango o la tarea no se encuentra")
     else:
-      print("Indice fuera de rango o la tarea no se encuentra")
+      return "Tipo de dato incorrecto"
   
   def ver_lista(self):
     return self.tareas

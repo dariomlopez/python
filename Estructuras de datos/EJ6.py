@@ -1,6 +1,11 @@
 # Ejercicio 6 - InventarioProductos
 # Diseña un programa en Python que administre un inventario de productos. 
 # Los usuarios pueden agregar nuevos productos, actualizar cantidades y buscar productos existentes.
+# Se quiere almacenar strings para los nombres de productos y una cantidad que es de tipo int
+# Creo que lo ideal es usar un objeto de pares llave: valor
+# En este caso nombre : nommbre del producto y cantidad: número
+# Espacio por usuario: 5KB
+# Programa:
 
 class InventarioProductos:
   def __init__(self):

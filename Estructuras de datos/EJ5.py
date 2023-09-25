@@ -1,6 +1,10 @@
 # Ejercicio 5 - ColaDeImpresion
 # Escribe un programa en Python que simule una cola de impresión. 
 # Los usuarios pueden agregar trabajos de impresión y se imprimen en orden FIFO (primero en entrar, primero en salir).
+# Se quiere almacenar strings dentro de un array
+# la estructura de datos podría ser un array dinamico
+#Espacio por usuario: 2KB
+# Programa:
 
 class ColaImpresion:
   def __init__(self):

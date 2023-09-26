@@ -7,23 +7,30 @@
 # Programa:
 class Calculadora:
 
+  #  Métodos de la clase que realizan una operación con los números pasados. Incluye un control de entrada de tipo básico
   def sumar(self, numero, numero2):
     if isinstance(numero, (int, float)) and isinstance(numero2, (int, float)):
-      return "{:.2f}".format(numero + numero2)
+      return f"Resultado de dividir {numero} + {numero2} = ""{:.2f}".format(numero + numero2)
     else:
       return "Tipo de dato no admitido"
   
   def restar(self, numero, numero2):
     if isinstance(numero, (int, float)) and isinstance(numero2, (int, float)):
-      return "{:.2f}".format(numero - numero2)
+      return f"Resultado de restar {numero} - {numero2} = ""{:.2f}".format(numero - numero2)
+    else:
+      return "Tipo de dato no admitido"
   
   def multiplicar(self, numero, numero2):
     if isinstance(numero, (int, float)) and isinstance(numero2, (int, float)):
-      return "{:.2f}".format(numero * numero2)
+      return f"Resultado de multiplicar {numero} * {numero2} = ""{:.2f}".format(numero * numero2)
+    else:
+      return "Tipo de dato no admitido"
   
   def dividir(self, numero, numero2):
     if isinstance(numero, (int, float)) and isinstance(numero2, (int, float)):
-      return "{:.2f}".format(numero / numero2)
+      return f"Resultado de dividir {numero} / {numero2} = ""{:.2f}".format(numero / numero2)
+    else:
+      return "Tipo de dato no admitido"
   
 mi_calculadora = Calculadora()
-print(mi_calculadora.sumar(7, 9.99))
+print(mi_calculadora.dividir(7, 9.99))

@@ -4,7 +4,7 @@
 # El enunciado no sugiere que siempre tenga que haber un número fijo de tareas así que la estructura de datos podría ser un array dinamico
 #Espacio por usuario: 2KB
 # Programa:
-class lista_tareas:
+class ListaTareas:
   def __init__(self):
     self.tareas = []
   
@@ -12,7 +12,7 @@ class lista_tareas:
     self.tareas.append(nombre_tarea)
   
   def eliminar_tarea(self, index = None, tarea = ""):
-    # Se puede eliminar una tarea por indice o por coincidencia total del nombre
+    # Método para eliminar una tarea por indice o por coincidencia total del nombre
     # Control de tipo de datos
     if isinstance(tarea, str):
       if tarea in self.tareas:
@@ -24,10 +24,11 @@ class lista_tareas:
     else:
       return "Tipo de dato incorrecto"
   
+  # Método para ver la lista
   def ver_lista(self):
     return self.tareas
 
-mi_lista = lista_tareas()
+mi_lista = ListaTareas()
 mi_lista.agregar_tarea("Hacer la compra")
 mi_lista.agregar_tarea("Estudiar para el examen")
 mi_lista.agregar_tarea("Comprar tomates")

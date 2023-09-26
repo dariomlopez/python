@@ -17,7 +17,7 @@ class AgendaContactos:
     # Se agrega cada contacto a self.lista_contactos
     self.lista_contactos.append(contacto)
 
-  #  Función para buscar un contacto de la lista por nombre/apellido/telefono
+  #  Método para buscar un contacto de la lista por nombre/apellido/telefono
   def buscar_contacto(self, nombre=None, apellido=None, telefono=None):
     
     coincidencia = []
@@ -30,7 +30,7 @@ class AgendaContactos:
       # else: throw Error "Debe especificar nombre/apellido/teléfono"
     return coincidencia
   
-  # Función para eliminar contacto por nombre, apellido o teléfono
+  # Método para eliminar contacto por nombre, apellido o teléfono
   def eliminar_contacto(self, nombre=None, apellido=None, telefono=None):
     # Si nos han indicado el nombre/apellido/telefono y el nombre/apellido/telefono coincide con los existentes se elimina
     for contacto in self.lista_contactos:
@@ -40,7 +40,7 @@ class AgendaContactos:
         self.lista_contactos.remove(contacto)
       # else: throw Error "Debe especificar nombre/apellido/teléfono"
   
-  # Función que muestra la lista actualizada de contactos 
+  # Método que muestra la lista actualizada de contactos 
   def mostrar_lista_contactos(self):
     return self.lista_contactos
   

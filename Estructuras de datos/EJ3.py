@@ -10,12 +10,12 @@ class ListaReproduccion:
   def __init__(self):
     self.ListaCanciones = []
 
-  def AgregarCancion(self, cancion = ""):
+  def agregar_cancion(self, cancion = ""):
     # la canción se añade al principio de la lista con el método insert que acepta dos parametros (index de array, cosa a añadir)
     # Argumentos que toma la función: esperamos sea tipo string, de momento no se controla
     self.ListaCanciones.insert(0, cancion)
 
-  def EliminarCancion(self, cancion = "", index = None):
+  def eliminar_cancion(self, cancion = "", index = None):
     # Se puede eliminar una cación por nombre o por index de lista
     # Argumento necesario: cancion(string)
     # Argumento no obligatorio: index (int) 

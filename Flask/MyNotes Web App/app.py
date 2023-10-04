@@ -3,10 +3,11 @@
 #https://www.youtube.com/watch?v=yBDHkveJUf4   web development with python and flask
 
 from flask import Flask
-
 app = Flask(__name__)
 
+@app.route('/')
+def homepage():
+    return 'Main page'
 
-
-if __name__ == "__main__":
-  app.run()
+if __name__ == '__main__':
+    app.run()

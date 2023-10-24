@@ -1,1 +1,1 @@
-# Practicing Python language with exercises 
+# Practicing Python with exercises 
